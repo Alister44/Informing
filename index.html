@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles.css">
+
+    <title>Informing</title>
+</head>
+
+<body style="background-color: #55D52B">
+
+
+
+
+    <div class="container_main">
+        <div class="conteiner1">
+
+            Введіть текст PDC у форму нижче:
+
+            <textarea class="pdc" placeholder="PQ1001 KBP-LWO 
+STD 23FEB22 1830 UTC 2030 LT
+STA 23FEB22 1930 UTC 2130 LT
+Reg Nmb - UR-SQH
+
+New ETD 23FEB22 2130 UTC  2330 LT
+New ETA 23FEB22 2230 UTC 0030  LT
+
+Reason:
+- operational reason"></textarea>
+
+
+            <div class="delay"></div>
+
+            <button class="button">Push</button>
+
+          
+            <p></p>
+            <div id="TimeDelay">
+                Від 2,5 годин – снеки (сендівіч) + вода<br>
+                Від 4 годин – гаряче харчування + вода<br>
+                Від 6 годин (у нічний час) – готель<br>
+                Від 12 годин (в денний час) – готель<br>
+
+            </div>
+
+            
+
+        </div>
+
+
+
+
+
+        <div class="conteiner2">
+            <div class="out_sms" contentEditable=true></div>
+
+            <p></p>
+
+            <div class="out_email" contentEditable=true></div>
+
+        </div>
+
+    </div>
+
+    <script src="Read_PDC.js"></script>
+</body>
+
+</html>
