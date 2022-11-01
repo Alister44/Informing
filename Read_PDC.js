@@ -1,26 +1,26 @@
 
-var requestURL_ua = 'https://alister44.github.io/Informing/airports_ua.json';
-var requestURL_en = 'https://alister44.github.io/Informing/airports_en.json';
+var requestURL_ua = 'https://alister44.github.io/Informing.io/airports_ua.json';
+var requestURL_en = 'https://alister44.github.io/Informing.io/airports_en.json';
 const map_en = new Map(Object.entries(getAP(requestURL_en)));
 const map_ua = new Map(Object.entries(getAP(requestURL_ua)));
 
 document.querySelector('button').addEventListener("click", myClick);
 
 
-function myClick2()
-{
-    let info="Колеги, пасажири проінформовані про затримку рейсу шляхом SMS та email повідомлень.<br>"+
-    "З повагою,<br><br>"+   
+// function myClick2()
+// {
+//     let info="Колеги, пасажири проінформовані про затримку рейсу шляхом SMS та email повідомлень.<br>"+
+//     "З повагою,<br><br>"+   
     
-    "Пишемо звіт на<br>"+
-    "agent <agent@skyup.aero><br>"+
-    "+ у копію<br>"
-    "Marina Taldykova <m.taldykova@skyup.aero>; Nataliia Durdas <n.durdas@skyup.aero>; Andrii Fadieiev <a.fadieiev@skyup.aero>;"+
-    "pr <pr@skyup.aero>; Duty Operations Officer <doo@skyup.aero>; ops <ops@skyup.aero>; KBP <KBP@skyup.aero>;"+
-    "Nataliya Tyran <n.tyran@skyup.aero>; Group SkyUp <group@skyup.aero>; Charter Operations <Charter@skyup.aero> ";
+//     "Пишемо звіт на<br>"+
+//     "agent <agent@skyup.aero><br>"+
+//     "+ у копію<br>"
+//     "Marina Taldykova <m.taldykova@skyup.aero>; Nataliia Durdas <n.durdas@skyup.aero>; Andrii Fadieiev <a.fadieiev@skyup.aero>;"+
+//     "pr <pr@skyup.aero>; Duty Operations Officer <doo@skyup.aero>; ops <ops@skyup.aero>; KBP <KBP@skyup.aero>;"+
+//     "Nataliya Tyran <n.tyran@skyup.aero>; Group SkyUp <group@skyup.aero>; Charter Operations <Charter@skyup.aero> ";
 
 
-}
+// }
 
 
 function myClick() {
@@ -37,8 +37,8 @@ function myClick() {
 
 
 
-    document.querySelector('.out_sms').innerHTML = Show_SMS(PDCinfo, LT_ETD);
-    document.querySelector('.out_email').innerHTML = Show_email(PDCinfo);
+     document.querySelector('.out_sms').innerHTML = Show_SMS(PDCinfo, LT_ETD);
+     document.querySelector('.out_email').innerHTML = Show_email(PDCinfo);
 
 
     document.querySelector('.delay').innerHTML = "Затримка складає: " + Time_delay(LT_ETD, LT_STD).hour + " годин, "
